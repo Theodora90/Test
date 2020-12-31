@@ -1,15 +1,10 @@
-/** @format */
-
-var token = localStorage.getItem("token");
-
 function logout() {
 	localStorage.clear();
 	sessionStorage.clear();
 	window.location.replace("./login.html");
 }
-if (!token) {
-	logout();
-}
+
+var token = localStorage.getItem("token");
 
 //Function to get list of sites
 async function getSites() {

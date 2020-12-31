@@ -15,7 +15,7 @@ p{
 }
 
 .hero{
-    background-image:linear-gradient(rgba(31, 45, 240, 0.199), rgba(31, 45, 240, 0.171)), url("./images/patrick-hendry-6xeDIZgoPaw-unsplash.jpg");
+    background-image:linear-gradient(rgba(31, 45, 240, 0.199), rgba(31, 45, 240, 0.171)), url("./patrick-hendry-6xeDIZgoPaw-unsplash.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

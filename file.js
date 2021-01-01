@@ -16,7 +16,8 @@ async function login(e) {
         method: 'POST',
         mode: 'cors',
         headers: {
-            'Content-Type': 'application/json;charset=utf-8'
+            'Content-Type': 'application/json;charset=utf-8',
+            'Access-Control-Allow-Origin': *
         },
         body: JSON.stringify(data)
     });

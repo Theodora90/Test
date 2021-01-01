@@ -16,6 +16,10 @@ async function getSites() {
 		`https://fcs.concept-nova.com/api/v1/sites/?token=${token}`,
 		{
 			method: "GET",
+			headers: {
+		      'Content-Type': 'application/json'
+		      // 'Content-Type': 'application/x-www-form-urlencoded',
+		       }
 		}
 	);
 	let results = await response.json();
@@ -48,6 +52,10 @@ async function getTankList() {
 		`https://fcs.concept-nova.com/api/v1/sites/${siteId}?token=${token}`,
 		{
 			method: "GET",
+			headers: {
+		      'Content-Type': 'application/json'
+		      // 'Content-Type': 'application/x-www-form-urlencoded',
+		    }
 		}
 	);
 	let results = await response.json();
@@ -82,6 +90,10 @@ async function getTanks() {
 		`https://fcs.concept-nova.com/api/v1/sites/${siteId}/${tankId}?token=${token}`,
 		{
 			method: "GET",
+			headers: {
+			      'Content-Type': 'application/json'
+			      // 'Content-Type': 'application/x-www-form-urlencoded',
+			    }
 		}
 	);
 	let result = await response.json();

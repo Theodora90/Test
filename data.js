@@ -18,7 +18,7 @@ async function getSites() {
 			method: "GET",
 			headers: {
 			    'Content-Type': 'application/json;charset=utf-8'
-			}
+			 }
 		}
 	);
 	let results = await response.json();

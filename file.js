@@ -14,7 +14,6 @@ async function login(e) {
 
    let response = await fetch('https://fcs.concept-nova.com/api/v1/login ',{
         method: 'POST',
-        mode: 'cors',
         headers: {
             'Content-Type': 'application/json;charset=utf-8',
             'Access-Control-Allow-Origin': *

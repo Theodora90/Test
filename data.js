@@ -13,12 +13,11 @@ async function getSites() {
 	let site2 = document.getElementById("site_two");
 	let site3 = document.getElementById("site_three");
 	let response = await fetch(
-		`https://fcs.concept-nova.com/api/v1/sites/?token=${token}`,
+		`https://cors-anywhere.herokuapp.com/https://fcs.concept-nova.com/api/v1/sites/?token=${token}`,
 		{
 			method: "GET",
 			headers: {
-			    'Content-Type': 'application/json;charset=utf-8',
-			    'Access-Control-Allow-Origin': *
+			    'Content-Type': 'application/json;charset=utf-8'
 			}
 		}
 	);
@@ -49,12 +48,11 @@ async function getTankList() {
 	let tankList2 = document.getElementById("tank_list2");
 	let tankList3 = document.getElementById("tank_list3");
 	let response = await fetch(
-		`https://fcs.concept-nova.com/api/v1/sites/${siteId}?token=${token}`,
+		`https://cors-anywhere.herokuapp.com/https://fcs.concept-nova.com/api/v1/sites/${siteId}?token=${token}`,
 		{
 			method: "GET",
 			headers: {
-			    'Content-Type': 'application/json;charset=utf-8',
-			    'Access-Control-Allow-Origin': *
+			    'Content-Type': 'application/json;charset=utf-8'
 			}
 		}
 	);
@@ -87,12 +85,11 @@ async function getTanks() {
 	let details2 = document.getElementById("tank_details2");
 	let details3 = document.getElementById("tank_details3");
 	let response = await fetch(
-		`https://fcs.concept-nova.com/api/v1/sites/${siteId}/${tankId}?token=${token}`,
+		`https://cors-anywhere.herokuapp.com/https://fcs.concept-nova.com/api/v1/sites/${siteId}/${tankId}?token=${token}`,
 		{
 			method: "GET",
 			headers: {
-			    'Content-Type': 'application/json;charset=utf-8',
-			    'Access-Control-Allow-Origin': *
+			    'Content-Type': 'application/json;charset=utf-8'
 			}
 		}
 	);

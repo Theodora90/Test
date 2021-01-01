@@ -12,11 +12,10 @@ async function login(e) {
         password: password
     };
 
-   let response = await fetch('https://fcs.concept-nova.com/api/v1/login ',{
+   let response = await fetch('https://cors-anywhere.herokuapp.com/https://fcs.concept-nova.com/api/v1/login ',{
         method: 'POST',
         headers: {
-            'Content-Type': 'application/json;charset=utf-8',
-            'Access-Control-Allow-Origin': *
+            'Content-Type': 'application/json;charset=utf-8'
         },
         body: JSON.stringify(data)
     });

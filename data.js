@@ -16,9 +16,9 @@ async function getSites() {
 		`https://fcs.concept-nova.com/api/v1/sites/?token=${token}`,
 		{
 			method: "GET",
-			mode: 'cors',
 			headers: {
-			    'Content-Type': 'application/json;charset=utf-8'
+			    'Content-Type': 'application/json;charset=utf-8',
+			    'Access-Control-Allow-Origin': *
 			}
 		}
 	);
@@ -52,9 +52,9 @@ async function getTankList() {
 		`https://fcs.concept-nova.com/api/v1/sites/${siteId}?token=${token}`,
 		{
 			method: "GET",
-			mode: 'cors',
 			headers: {
-			    'Content-Type': 'application/json;charset=utf-8'
+			    'Content-Type': 'application/json;charset=utf-8',
+			    'Access-Control-Allow-Origin': *
 			}
 		}
 	);
@@ -90,10 +90,9 @@ async function getTanks() {
 		`https://fcs.concept-nova.com/api/v1/sites/${siteId}/${tankId}?token=${token}`,
 		{
 			method: "GET",
-			 mode: 'no-cors',
-			mode: 'cors',
 			headers: {
-			    'Content-Type': 'application/json;charset=utf-8'
+			    'Content-Type': 'application/json;charset=utf-8',
+			    'Access-Control-Allow-Origin': *
 			}
 		}
 	);

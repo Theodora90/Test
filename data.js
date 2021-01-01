@@ -6,6 +6,10 @@ function logout() {
 
 var token = localStorage.getItem("token");
 
+if(!token){
+    logout();
+}
+
 //Function to get list of sites
 async function getSites() {
 	let siteName = " ";
